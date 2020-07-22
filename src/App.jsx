@@ -25,16 +25,20 @@ class App extends React.Component {
       buttonClicked: buttonName
     });
   }
-
-  /*Check out this addAssignment method*/
   addAssignment(assignmentName) {
     this.setState({
       assignments: this.state.assignments.concat(assignmentName)
     });
   }
 
-  /*Write an addStudent method here*/
 
+
+
+  addStudent(studentName){
+    this.setState({
+      students: this.state.students.concat(studentName)
+    })
+  }
   addGrade(assignment, student, score) {
     let grades = this.state.grades;
     let assignmentName = assignment;
