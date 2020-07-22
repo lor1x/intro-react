@@ -8,7 +8,8 @@ class App extends React.Component {
 
     this.state = {
       buttonClicked: "",
-      assignments: [] /*Below this line, add the students state variable*/,
+      assignments: [],
+      students: [],
       grades: {}
     };
 
@@ -46,7 +47,7 @@ class App extends React.Component {
   }
 
   render() {
-    let tabChoice = <div />;
+    let tabChoice = <div/>;
 
     if (this.state.buttonClicked === "assignments") {
       tabChoice = (
