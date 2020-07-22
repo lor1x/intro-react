@@ -71,8 +71,8 @@ class App extends React.Component {
     if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
-          tableNames={this.state.assignments}
-          rows={this.state.students}
+          tableNames={this.state.grades}
+          rows={this.state.grades}
           addFunction={this.addGrade}
           data={this.state.grades}
         />
